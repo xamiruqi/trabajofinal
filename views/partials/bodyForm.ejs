@@ -1,0 +1,51 @@
+
+<div id="message">
+    before we see you, let us know about yourself. <br>
+    we'll ask for those pictures after we know who you are ;)
+</div>
+<form action="/register" method="POST">
+    <div id="forms">
+
+        <div id="inputs">
+            <input class="textbox" type="text" name="name" placeholder="name" required>
+            <br><br>
+            <input class="textbox" type="text" name="last_name" id="password" placeholder="last name" required>  
+            <br><br>
+            <input class="textbox" type="email" name="email" id="mail" placeholder="email" required >
+
+            <br><br>
+
+            <select name="gender" class="selected" required>
+                <option value="Opcion" selected style="display: none;">gender</option>
+                <option value="select"> select your gender </option>
+                <option value="female"> female </option>
+                <option value="male">male</option>
+                <option value="non-binary">non-binary</option>
+            </select>
+
+            <select name="city" class="selected" required>
+                <option value="Opcion" selected style="display: none;">city</option>
+                <option value="select1"> select your city </option>
+                <option value="la">los angeles</option>
+                <option value="ny">new york</option>
+                <option value="miami">miami </option>
+            </select>
+
+        </div>
+
+
+        <div id="bio">
+            <textarea name="bio" placeholder="tell us who you are!" required></textarea>
+        </div>
+
+
+
+    </div>
+
+    <div id="boton">
+<button type="submit">done</button>
+        
+
+    </div>
+
+</form>
